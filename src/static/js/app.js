@@ -2,6 +2,14 @@ function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
         <Container>
+            <Row className="mb-4">
+                <Col className="text-center">
+                    <h1 style={{ marginTop: "20px", fontWeight: "600" }}>
+                        XiaoTechJourney
+                    </h1>
+                </Col>
+            </Row>
+
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
@@ -10,6 +18,7 @@ function App() {
         </Container>
     );
 }
+
 
 function TodoListCard() {
     const [items, setItems] = React.useState(null);
